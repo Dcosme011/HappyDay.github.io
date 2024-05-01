@@ -83,7 +83,6 @@ body svg polygon {
 
 
 .contenido {
-  height: 100vh;
   justify-content: center; /* Centramos horizontalmente el contenido */
   align-items: center; /* Centramos verticalmente el contenido */
 }
