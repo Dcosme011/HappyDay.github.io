@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  console.log("El evento DOMContentLoaded se ha activado correctamente.");
-
+console.log("El evento DOMContentLoaded se ha activado correctamente.");
     // Obtener la fecha actual
     var fechaActual = new Date();
     // Imprimir la fecha actual en la consola
@@ -81,6 +79,4 @@ document.addEventListener('DOMContentLoaded', function() {
       envelope.classList.add('close');
       envelope.classList.remove('open');
     }
-});
-
   
