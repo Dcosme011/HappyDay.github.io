@@ -267,14 +267,14 @@
 
 .envlope-wrapper {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .reset {
   position: absolute;
-  bottom: 10%; /* Ajusta el valor de 200px según sea necesario para la separación deseada */
+  bottom: calc((100vh/2.5) - 65px);; /* Ajusta el valor de 200px según sea necesario para la separación deseada */
   left: 50%;
   transform: translate(-50%, -50%);
 }
