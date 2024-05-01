@@ -274,7 +274,7 @@
 
 .reset {
   position: absolute;
-  top: calc((100vh/2.5) + 50px); /* Ajusta el valor de 200px según sea necesario para la separación deseada */
+  top: calc((100vh/2.5) - 50px); /* Ajusta el valor de 200px según sea necesario para la separación deseada */
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -311,10 +311,10 @@
   }
   100% {
     width: calc(100vw - 20px); /* Ancho de la pantalla menos 20px */
-    height: calc((100vh/2.5) - 20px); /* Altura de la pantalla menos 20px */
+    height: calc((100vh/2.5) - 200px); /* Altura de la pantalla menos 20px */
     left: 50%; /* Centrado horizontalmente */
     top: 50%; /* Centrado verticalmente */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -65%);
     z-index: 3;
   }
 }
