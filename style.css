@@ -81,6 +81,23 @@ body svg polygon {
   animation: batman 6s 1; /* Cambiado a ejecutarse solo una vez */
 }
 
+
+
+.contenido {
+  height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+#contenido-dinamico-arriba,
+#contenido-dinamico-abajo {
+  height: 50vh; /* Cada div ocupa el 50% de la altura de la ventana */
+  overflow-y: auto; /* Si el contenido es más largo que la altura del div, se mostrará una barra de desplazamiento vertical */
+}
+
+
+
+
+
+
 #envelope {
   margin: 150px;
   position: relative;

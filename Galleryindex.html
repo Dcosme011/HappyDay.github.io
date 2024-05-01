@@ -3,8 +3,8 @@
     <head>
 		<meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>3D Image Gallery with HTML, CSS3 and jQuery</title>
-        <meta name="viewport" content="width=window, initial-scale=0.50"> 
+        <title>Photos Dad</title>
+        <meta name="viewport" content="initial-scale=0.7"> 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 		
     </head>
@@ -12,10 +12,10 @@
         <div class="wrapper">
 			<section id="img-wrapper" class="img-wrapper">
 				<div class="imgBox">
-					<a href="#"><img src="images/1.jpg" alt="#"><div>NATURAL SCENERY ONE</div></a>
-					<a href="#"><img src="images/2.jpg" alt="#"><div>NATURAL SCENERY TWO</div></a>
-					<a href="#"><img src="images/3.jpg" alt="#"><div>NATURAL SCENERY THREE</div></a>
-					<a href="#"><img src="images/4.jpg" alt="#"><div>NATURAL SCENERY FOUR</div></a>
+					<a href="#"><img src="images/1.jpg" alt="#"><div></div></a>
+					<a href="#"><img src="images/2.jpg" alt="#"><div></div></a>
+					<a href="#"><img src="images/3.jpg" alt="#"><div></div></a>
+					<a href="#"><img src="images/4.jpg" alt="#"><div></div></a>
 				</div>
 			</section>
         </div>
@@ -25,7 +25,8 @@
 		<script type="text/javascript">
 			$(function() {
 				$('#img-wrapper').gallery({
-					autoplay	:	true
+					autoplay	:	true,
+					interval    :   8000
 				});
 			});
 		</script>

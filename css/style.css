@@ -1,12 +1,12 @@
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: montserrat;
-	font-weight: 400;
-	font-size: 15px;
-	overflow-y: scroll;
-	background: beige;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    overflow-y: scroll;
+    background: beige;
 }
 section{
 	display: block;
@@ -22,38 +22,34 @@ a{
     padding-top: 15%;
 }
 
-.imgBox a img {
-    width: 100%;
-    height: auto; 
-}
-
 .img-wrapper{
 	width: 100%;
 	height: 450px;
 	position: relative;
 }
-.imgBox{
-	width: 481px;
-	margin: auto;
-	position: relative;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-perspective: 10px;
-	-moz-perspective: 10px;
-	-o-perspective: 10px;
-	-ms-perspective: 10px;
-	perspective: 10px;
+.imgBox {
+    width: 90%; /* Cambiado a una unidad relativa */
+    max-width: 600px; /* Establecido un ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 10px;
+    -moz-perspective: 10px;
+    -o-perspective: 10px;
+    -ms-perspective: 10px;
+    perspective: 10px;
 }
-.imgBox a{
-	width: 482px;
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+.imgBox a {
+    width: 100%; /* Cambiado a una unidad relativa */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 .imgBox a.bx-animate{
 	-webkit-transition: all 0.5s ease-in-out;
@@ -62,8 +58,10 @@ a{
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.imgBox a img{
-	display: block;
+.imgBox a img {
+    display: block;
+    width: 100%;
+    height: auto; 
 }
 .imgBox a div{
 	text-align: center;
