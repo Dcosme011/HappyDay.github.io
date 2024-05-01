@@ -277,7 +277,7 @@ body {
 
 .reset {
   position: absolute;
-  bottom: 0%; /* Ajusta el valor de 200px según sea necesario para la separación deseada */
+  bottom: 10%; /* Ajusta el valor de 200px según sea necesario para la separación deseada */
   left: 50%;
   transform: translate(-50%, -50%);
 }
