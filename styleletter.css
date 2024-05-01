@@ -91,7 +91,7 @@
   top: 50px;
   left: 2%;
   width: calc(100% - 5%); /* El 96% del ancho del contenedor menos 10px */
-  height: calc(100% - 20%); /* El 50% de la altura del contenedor menos 10px */
+  height: calc(100% - 60px); /* El 50% de la altura del contenedor menos 10px */
   overflow: auto; /* Esto permite que el contenido sea scrollable si excede el tamaño del contenedor */
 }
 
@@ -314,7 +314,7 @@ body {
   }
   100% {
     width: calc(100vw - 20px); /* Ancho de la pantalla menos 20px */
-    height: calc((100vh/3) - 20px); /* Altura de la pantalla menos 20px */
+    height: calc((100vh/2.5) - 20px); /* Altura de la pantalla menos 20px */
     left: 50%; /* Centrado horizontalmente */
     top: 50%; /* Centrado verticalmente */
     transform: translate(-50%, -50%);
