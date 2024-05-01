@@ -79,4 +79,3 @@ console.log("El evento DOMContentLoaded se ha activado correctamente.");
       envelope.classList.add('close');
       envelope.classList.remove('open');
     }
-  
