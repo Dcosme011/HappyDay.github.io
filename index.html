@@ -14,11 +14,11 @@
       }
 
       #contenido-dinamico-arriba {
-          top: 25%;
+          top: 10%;
       }
 
       #contenido-dinamico-abajo {
-          bottom: 25%;
+          bottom: 10%;
       }
 
       .contenido iframe {
@@ -318,26 +318,31 @@
     <polygon fill="#FDFFFF" points="430.25,382.081 433.104,388.75 	435.151,381.906 "/>
     <polygon fill="#548DCA" points="440.729,384.667 433.104,388.75 	435.151,381.906 "/>
     <polygon fill="#275CA1" points="425.491,383.144 433.104,388.75 	430.25,382.081 "/>
-    </g>
-  </svg>
+  </g>  
+</svg>
 
-  <div class="contenido" id="contenido-dinamico-arriba"></div>
-  <div class="contenido" id="contenido-dinamico-abajo"></div>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-      // Espera a que la animación termine y luego muestra el contenido dinámico
-      window.onload = function () {
-          var svgAnimation = document.querySelector('body svg polygon');
-  
-          // Detecta el final de la animación
-          svgAnimation.addEventListener('animationend', function () {
-              // Cargar el contenido dinámico
-              $('#contenido-dinamico-arriba').load('./Galleryindex.html');
-              $('#contenido-dinamico-abajo').load('./Letter.html');
-          });
-      };
-  </script>
-  
+<div class="contenido" id="contenido-dinamico-arriba"></div>
+<div class="contenido" id="contenido-dinamico-abajo"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Espera a que la animación termine y luego muestra el contenido dinámico
+    window.onload = function () {
+        var svgAnimation = document.querySelector('body svg polygon');
+
+        // Detecta el final de la animación
+        svgAnimation.addEventListener('animationend', function () {
+            // Cargar el contenido dinámico
+            $('#contenido-dinamico-arriba').load('./Galleryindex.html');
+            $('#contenido-dinamico-abajo').load('./letter.html');
+
+            // Mostrar el contenido y los botones
+            $('.envlope-wrapper').show();
+            $('.reset').show();
+        });
+    };
+</script>
+<script src="./script.js"></script>
+
 </body>
 </html>
