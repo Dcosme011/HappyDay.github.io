@@ -5,7 +5,7 @@ body {
     font-family: montserrat;
     font-weight: 400;
     font-size: 15px;
-    overflow-y: scroll;
+    overflow-y: none;
     background: beige;
 }
 section{
@@ -19,7 +19,7 @@ a{
 	width: 100%;
 	position: relative;
 	text-align: center;
-    padding-top: 15%;
+    padding-top: 5%;
 }
 
 .img-wrapper{
@@ -27,22 +27,19 @@ a{
 	height: 450px;
 	position: relative;
 }
+
+
 .imgBox {
-    width: 90%; /* Cambiado a una unidad relativa */
-    max-width: 600px; /* Establecido un ancho máximo */
-    margin: 0 auto; /* Centrado horizontal */
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
+    width: 95%;
+    max-width: 600px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transform-style: preserve-3d;
-    -webkit-perspective: 10px;
-    -moz-perspective: 10px;
-    -o-perspective: 10px;
-    -ms-perspective: 10px;
     perspective: 10px;
 }
+
 .imgBox a {
     width: 100%; /* Cambiado a una unidad relativa */
     display: block;
